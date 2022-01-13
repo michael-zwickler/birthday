@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  
+  <head>
+    <meta charset="utf-8">
+    <title>Birthday Greeter</title>
+    <style>
+
+      h1 {
+        text-align: center;
+      }
+
+      h3 {
+        text-align: center;
+      }
+
+      form {
+        margin: 0 auto;
+        width: 280px;
+        padding: 1em;
+        border: 1px solid #CCC;
+        border-radius: 1em;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      form li + li {
+        margin-top: 1em;
+      }
+
+      label {
+          display: inline-block;
+          width: 90px;
+          text-align: left;
+      }
+
+      input {
+        font: 0.8em sans-serif;
+        width: 150px;
+        box-sizing: border-box;
+        border: 1px solid #999;
+        border-radius: 0.25em;
+      }
+
+      select {
+        font: 0.8em sans-serif;
+        width: 150px;
+        box-sizing: border-box;
+        border: 1px solid #999;
+        border-radius: 0.25em;
+      }
+
+      input:focus {
+        border-color: #000;
+      }
+
+      .button {
+        text-align: center;
+      }
+
+      button {
+        width: 280px;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    
+      <form action="/countdown" method="post">
+      <ul>
+
+      <li><h1> Hi There! </h1></li>
+        
+      <li><h3> What is your name? </h3></li>
+
+        <li>
+          <label for="name"> Name </label>
+          <input type="text" id="name" name="user_name">
+        </li>
+
+        <li><h3>  When is your birthday? </h3></li>
+
+        <li>
+          <label for="day"> Day </label>
+          <select name="day" id="day">
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+            <option value="04">04</option>
+            <option value="05">05</option>
+            <option value="06">06</option>
+            <option value="07">07</option>
+            <option value="08">08</option>
+            <option value="09">09</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+            <option value="31">31</option>
+          </select>
+        </li>
+
+        <li>
+          <label for="month"> Month </label>
+          <select name="month" id="month">
+            <option value="01">January</option>
+            <option value="02">February</option>
+            <option value="03">March</option>
+            <option value="04">April</option>
+            <option value="05">May</option>
+            <option value="06">June</option>
+            <option value="07">July</option>
+            <option value="08">August</option>
+            <option value="09">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+          </select>
+        </li>
+        
+        <li class="button">
+          <button type="submit"> Submit </button>
+        </li>
+      
+        </ul>
+    </form>
+
+   </body>
+
+</html>

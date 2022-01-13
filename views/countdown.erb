@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  
+  <head>
+    <meta charset="utf-8">
+    <title>Birthday Greeter</title>
+    <style>
+
+      h1 {
+        text-align: center;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <h1>
+      Hello <%=@user_name%>, your birthday is
+      <% if @days_to_birthday != 1 %>
+        in <%=@days_to_birthday%> days!
+      <% else %>
+          tomorrow!
+      <% end %> 
+    </h1>
+
+  </body>
+
+</html>
